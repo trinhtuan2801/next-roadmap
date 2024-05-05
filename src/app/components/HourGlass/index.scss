@@ -1,0 +1,16 @@
+.hourglass {
+  animation-name: spin1;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes spin1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
