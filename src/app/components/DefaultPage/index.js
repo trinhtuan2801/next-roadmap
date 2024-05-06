@@ -1,11 +1,12 @@
 import { Card, Typography } from '@mui/joy';
 
-export default function UserDefault() {
+export default function DefaultPage({ name, children }) {
   return (
     <Card>
       <Typography level='title-lg' sx={{ fontStyle: 'italic' }} color='neutral'>
-        User Default
+        {name} Default
       </Typography>
+      {children}
     </Card>
   );
 }

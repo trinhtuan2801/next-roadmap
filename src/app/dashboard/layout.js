@@ -1,17 +1,19 @@
-import { Box, Card, Typography } from '@mui/joy';
+import { Box } from '@mui/joy';
 import MyLink from '../components/MyLink';
+import Page from '../components/Page';
 
-export default function DashboardLayout({ children, admin, user }) {
+export default function DashboardLayout({ children, admin, user, auth }) {
   return (
-    <Card>
-      <Typography level='title-lg'>Dashboard Layout</Typography>
+    <Page name='Dashboard Layout'>
       <Box display='flex' gap={2}>
         <MyLink href='/dashboard'>Dashboard</MyLink>
         <MyLink href='/dashboard/product'>Product</MyLink>
+        <MyLink href='/dashboard/login'>Login</MyLink>
       </Box>
+      {auth}
       {children}
       {admin}
       {user}
-    </Card>
+    </Page>
   );
 }

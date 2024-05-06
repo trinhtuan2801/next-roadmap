@@ -1,3 +1,5 @@
+import Page from '../components/Page';
+
 export default function Dashboard() {
-  return null;
+  return <Page name='Dashboard' />;
 }

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "del .next && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -18,5 +18,10 @@
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.76.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.12.8",
+    "del-cli": "^5.1.0",
+    "typescript": "5.4.5"
   }
 }

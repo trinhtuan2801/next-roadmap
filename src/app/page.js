@@ -1,11 +1,10 @@
-import { Card, Typography } from '@mui/joy';
 import MyLink from './components/MyLink';
+import Page from './components/Page';
 
 export default function Home() {
   return (
-    <Card>
-      <Typography level='title-lg'>Home</Typography>
+    <Page name='Home'>
       <MyLink href='/dashboard'>Dashboard</MyLink>
-    </Card>
+    </Page>
   );
 }

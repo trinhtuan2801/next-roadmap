@@ -1,9 +1,5 @@
-import { Card, Typography } from '@mui/joy';
+import LoadingPage from '@/app/components/LoadingPage';
 
 export default function AdminLoading() {
-  return (
-    <Card>
-      <Typography level='title-lg'>Admin Loading</Typography>
-    </Card>
-  );
+  return <LoadingPage name='Admin' />;
 }

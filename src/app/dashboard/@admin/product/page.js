@@ -1,9 +1,5 @@
-import { Card, Typography } from "@mui/joy";
+import Page from '@/app/components/Page';
 
-export default function AdminProduct () {
-  return (
-    <Card>
-      <Typography level='title-lg'>Admin Product</Typography>
-    </Card>
-  )
+export default function AdminProduct() {
+  return <Page name='Admin Product' />;
 }
