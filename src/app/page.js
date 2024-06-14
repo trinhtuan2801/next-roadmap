@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <Page name='Home'>
       <MyLink href='/dashboard'>Dashboard</MyLink>
+      <MyLink href='/products'>Products</MyLink>
     </Page>
   );
 }
