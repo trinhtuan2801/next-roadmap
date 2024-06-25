@@ -1,5 +1,7 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
+import MyLink from './components/MyLink';
+import { Box } from '@mui/joy';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -11,7 +13,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Box p={1}>
+          <Box p={1} pt={0}>
+            <MyLink href='/'>Home</MyLink>
+          </Box>
+          {children}
+        </Box>
+      </body>
     </html>
   );
 }
