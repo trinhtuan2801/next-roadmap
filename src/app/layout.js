@@ -1,7 +1,8 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
-import MyLink from './components/MyLink';
+import MyLink from '../components/MyLink';
 import { Box } from '@mui/joy';
+import Layout from '@/components/Layout';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -14,11 +15,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <Box p={1}>
+        <Box p={2}>
           <Box p={1} pt={0}>
             <MyLink href='/'>Home</MyLink>
           </Box>
-          {children}
+          <Layout name='App'>{children}</Layout>
         </Box>
       </body>
     </html>
