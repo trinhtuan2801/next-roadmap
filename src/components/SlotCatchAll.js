@@ -1,12 +1,12 @@
 import { Box, Card, Chip, Typography } from '@mui/joy';
 
-export default function Default({ children, name }) {
+export default function SlotCatchAll({ children, name }) {
   return (
-    <Card sx={{ borderStyle: 'dashed' }}>
+    <Card sx={{ borderStyle: 'dashed' }} color='success'>
       <Box display='flex' alignItems='center' gap={1}>
         <Typography>{name}</Typography>
-        <Chip sx={{ borderStyle: 'dashed' }} variant='outlined'>
-          default
+        <Chip variant='outlined' color='success' sx={{ borderStyle: 'dashed' }}>
+          slot catch all
         </Chip>
       </Box>
       {children}

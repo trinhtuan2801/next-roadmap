@@ -1,10 +1,10 @@
-import Slot from '@/components/Slot';
+import Default from '@/components/Default';
 import { Typography } from '@mui/joy';
 
-export default function Slot1() {
+export default function Slot1Default() {
   return (
-    <Slot name='slot-1'>
+    <Default name='slot-1'>
       <Typography level='body-sm'>page, default, sub-route-1</Typography>
-    </Slot>
+    </Default>
   );
 }

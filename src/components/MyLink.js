@@ -8,12 +8,8 @@ export default function MyLink({ href, children }) {
   const pathname = usePathname();
   const isActive = pathname === href;
   return (
-    <NextLink href={href}>
-      <Link
-        component='span'
-        underline='always'
-        variant={isActive ? 'soft' : 'plain'}
-      >
+    <NextLink href={href} style={{ width: 'fit-content' }}>
+      <Link component='span' underline='always' variant={isActive ? 'soft' : 'plain'}>
         {children}
       </Link>
     </NextLink>
