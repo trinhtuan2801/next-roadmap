@@ -2,7 +2,13 @@ import Layout from '@/components/Layout';
 import MyLink from '@/components/MyLink';
 import { Box, Typography } from '@mui/joy';
 
-export default function SlotRouteLayout({ children, slot1, slot2, slot3 }) {
+export default function SlotRouteLayout({
+  children,
+  slot1,
+  slot2,
+  slot3,
+  slot4,
+}) {
   return (
     <Layout name='test-slot'>
       <Typography level='body-sm'>*There's no sub-route-2</Typography>
@@ -14,6 +20,7 @@ export default function SlotRouteLayout({ children, slot1, slot2, slot3 }) {
       {slot1}
       {slot2}
       {slot3}
+      {slot4}
     </Layout>
   );
 }

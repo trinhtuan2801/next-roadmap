@@ -5,7 +5,7 @@ export default function CatchAll({ children, name }) {
     <Card color='success'>
       <Box display='flex' alignItems='center' gap={1}>
         <Typography>{name}</Typography>
-        <Chip variant='solid' color='success'>
+        <Chip variant='outlined' color='success'>
           page catch all
         </Chip>
       </Box>
