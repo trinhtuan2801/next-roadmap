@@ -1,6 +1,11 @@
 import { Box, Card, Chip, Typography } from '@mui/joy';
+import { PropsWithChildren } from 'react';
 
-export default function CatchAll({ children, name }) {
+interface Props extends PropsWithChildren {
+  name: string;
+}
+
+export default function CatchAll({ children, name }: Props) {
   return (
     <Card color='success'>
       <Box display='flex' alignItems='center' gap={1}>

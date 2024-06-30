@@ -1,6 +1,11 @@
 import { Box, Card, Chip, Typography } from '@mui/joy';
+import { PropsWithChildren } from 'react';
 
-export default function SlotCatchAll({ children, name }) {
+interface Props extends PropsWithChildren {
+  name: string;
+}
+
+export default function SlotCatchAll({ children, name }: Props) {
   return (
     <Card sx={{ borderStyle: 'dashed' }} color='success'>
       <Box display='flex' alignItems='center' gap={1}>

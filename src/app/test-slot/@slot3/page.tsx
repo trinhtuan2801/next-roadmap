@@ -1,4 +1,4 @@
-import Slot from '@/components/Slot';
+import Slot from '@/components/file-wrapper/Slot';
 import { Typography } from '@mui/joy';
 
 export default function Slot3() {

@@ -1,4 +1,4 @@
-import Slot from '@/components/Slot';
+import Slot from '@/components/file-wrapper/Slot';
 import { wait } from '@/utils/wait';
 import { Typography } from '@mui/joy';
 

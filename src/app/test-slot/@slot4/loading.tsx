@@ -1,4 +1,4 @@
-import Loading from '@/components/Loading';
+import Loading from '@/components/file-wrapper/Loading';
 import { Typography } from '@mui/joy';
 
 export default function Slot4Loading() {

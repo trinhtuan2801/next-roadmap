@@ -1,6 +1,10 @@
 import { Box, Card, Chip, Typography } from '@mui/joy';
+import { PropsWithChildren } from 'react';
 
-export default function Layout({ children, name }) {
+interface Props extends PropsWithChildren {
+  name: string;
+}
+export default function Layout({ children, name }: Props) {
   return (
     <Card color='warning' variant='soft'>
       <Box display='flex' alignItems='center' gap={1}>

@@ -1,4 +1,4 @@
-import Default from '@/components/Default';
+import Default from '@/components/file-wrapper/Default';
 import { Typography } from '@mui/joy';
 
 export default function Slot2Default() {
