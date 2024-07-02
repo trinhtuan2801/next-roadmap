@@ -26,7 +26,7 @@ export default function RootLayout({ children, auth }: Props) {
               <MyLink href='/'>home</MyLink>
               <MyLink href='/test-slot'>test-slot</MyLink>
               <MyLink href='/login'>login</MyLink>
-              <MyLink href='/register'>register</MyLink>
+              <MyLink href='/dynamic-route'>dynamic-route</MyLink>
             </Box>
             {children}
             {auth}
