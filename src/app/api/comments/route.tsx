@@ -1,4 +1,4 @@
-import comments from '@/mocks/comments';
+import { comments } from '@/mocks/comments';
 import { NextRequest } from 'next/server';
 
 export async function GET() {
@@ -8,7 +8,7 @@ export async function GET() {
 export async function POST(req: NextRequest) {
   const comment = await req.json();
   const newComment = {
-    id: comments.length + 1,
+    id: `${comments.length + 1}`,
     text: comment.text,
   };
   comments.push(newComment);

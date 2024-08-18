@@ -1,0 +1,3 @@
+export enum CACHE_KEY {
+  GET_COMMENT_BY_ID = 'GET_COMMENT_BY_ID',
+}
